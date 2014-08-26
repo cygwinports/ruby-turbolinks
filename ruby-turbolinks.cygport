@@ -1,0 +1,15 @@
+inherit rubygem
+
+NAME="ruby-turbolinks"
+VERSION=2.3.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby web app link speedup library"
+DESCRIPTION="Turbolinks makes following links in your web application faster
+(use with Rails Asset Pipeline)"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_turbolinks_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_turbolinks_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
